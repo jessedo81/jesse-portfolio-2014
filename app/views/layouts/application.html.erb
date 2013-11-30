@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JessePortfolio2014</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+  <title>Jesse Portfolio 2014</title>
+  
+  
+  <!-- MAIN CSS -->
+  <link href="/stylesheets/app.css" rel="stylesheet">
+  
+  <!-- PURE -->
+  <link href="/stylesheets/pure-min.css" rel="stylesheet">
+  
+  <!-- PURE WEBSITE -->
+		  
+  <!-- ICONS -->
+  <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link href="/stylesheets/font-awesome-ie7.css" rel="stylesheet">
+	
+	
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	
+	<!-- MAIN JS -->
+		
+	
 </head>
+
 <body>
 
-<%= yield %>
+	<!-- Left/Main Nav -->
+	<%= render "layouts/leftNav" %>
+	
+	<!-- Header -->
+	<%= render "layouts/header" %>
+	
+	<!-- Body -->
+	<%= yield %>
+	
+	<!-- Footer -->
+	<%= render "layouts/footer" %>
+ 
+	<!-- @ Media JS Script -->
+	<script src="http://purecss.io/combo/1.6.1?/js/ui.js&/vendor/rainbow/rainbow-min.js"></script>
+
 
 </body>
 </html>

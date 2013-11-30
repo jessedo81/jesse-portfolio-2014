@@ -50,7 +50,7 @@ JessePortfolio2014::Application.routes.draw do
   #TEST
 
 	get 'test' => 'app#test', :as => :test
-  
+  get 'test2' => 'app#test2', :as => :test2
   
   # Example resource route with concerns:
   #   concern :toggleable do
